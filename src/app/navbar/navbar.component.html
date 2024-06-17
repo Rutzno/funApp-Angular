@@ -1,0 +1,43 @@
+<nav class="p-3 navbar">
+  <ul class="nav nav-pills">
+    <li>
+      <button (click)="setActionToHome()"
+              routerLink="home"
+              [class]="currentRoute=='home' ? 'btn btn-primary' : 'btn btn-outline-primary'">
+        <i class="bi bi-house"></i>
+        Home
+      </button>
+    </li>
+    <li>
+      <button (click)="setActionToProducts()"
+              routerLink="products"
+              [class]="currentRoute=='products' ? 'btn btn-primary ms-1' : 'btn btn-outline-primary ms-1'">
+        <i class="bi bi-circle-fill"></i>
+        Products
+      </button>
+    </li>
+    <li>
+      <button (click)="setActionToNewProduct()"
+              routerLink="newProduct"
+              [class]="currentRoute=='new-product' ? 'btn btn-primary ms-1' : 'btn btn-outline-primary ms-1'">
+        <i class="bi bi-plus-circle"></i>
+        New Product
+      </button>
+    </li>
+    <li *ngIf="loadingService.isLoading | async">
+      <div class="spinner-border text-primary ms-2" role="status">
+
+      </div>
+    </li>
+  </ul>
+
+  <ul class="nav nav-pills">
+    <li *ngIf="appStateService.authState.isAuthenticated">
+      <span>{{appStateService.authState.username}}</span>
+      <button class="btn btn-outline-primary ms-1" (click)="handleLogout()">Logout</button>
+    </li>
+    <li *ngIf="!appStateService.authState.isAuthenticated">
+      <button class="btn btn-outline-primary ms-1" (click)="handleLogin()">Login</button>
+    </li>
+  </ul>
+</nav>

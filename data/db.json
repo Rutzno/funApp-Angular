@@ -1,0 +1,91 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "password": "1234",
+      "roles": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsIm5hbWUiOiJNYWNrIERJQVJSQSIsImlhdCI6MTUxNjIzOTAyMiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODg4L2F1dGgiLCJlbWFpbCI6Im1hY2t0YkBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIl19.Dnk3QjurJhipxfqm9YP_bUVBmYY4-9C8wpyqYZdsUG8"
+    },
+    {
+      "id": "user2",
+      "password": "1234",
+      "roles": [
+        "USER"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMiIsIm5hbWUiOiJNYWNrIERJQVJSQSIsImlhdCI6MTUxNjIzOTAyMiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODg4L2F1dGgiLCJlbWFpbCI6Im1hY2t0YkBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIl19.8xETuK1kv23m7sFF-1xVQ8iU2T1vhYBmCa4eb8mLV3c"
+    },
+    {
+      "id": "admin",
+      "password": "1234",
+      "roles": [
+        "USER",
+        "ADMIN"
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIm5hbWUiOiJNYWNrIERJQVJSQSIsImlhdCI6MTUxNjIzOTAyMiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4ODg4L2F1dGgiLCJlbWFpbCI6Im1hY2t0YkBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iXX0.goowYlbVfy7wdu17P9fmqQ63qY45ELTBuJDiAYwrovg"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Computer",
+      "price": 300000,
+      "checked": false
+    },
+    {
+      "id": "2",
+      "name": "Smartphone",
+      "price": "197000",
+      "checked": false
+    },
+    {
+      "id": "3",
+      "name": "Printer",
+      "price": "25050",
+      "checked": true
+    },
+    {
+      "id": "4",
+      "name": "Mouse",
+      "price": 2750,
+      "checked": true
+    },
+    {
+      "id": "f2c9",
+      "name": "Mouse",
+      "price": 2000,
+      "checked": false
+    },
+    {
+      "id": "34df",
+      "name": "Test",
+      "price": 5000,
+      "checked": true
+    },
+    {
+      "id": "5",
+      "name": "Mouse2",
+      "price": 2750,
+      "checked": true
+    },
+    {
+      "id": "7",
+      "name": "Test2",
+      "price": 5000,
+      "checked": false
+    },
+    {
+      "id": "386e",
+      "name": "iPhone",
+      "price": "270000",
+      "checked": false
+    },
+    {
+      "id": "f325",
+      "name": "iPhone 12",
+      "price": "295000",
+      "checked": true
+    }
+  ]
+}
