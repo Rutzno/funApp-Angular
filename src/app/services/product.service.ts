@@ -2,16 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Product} from "../model/product.model";
 import {Observable} from "rxjs";
+import {ProductsPaginatedResponse} from "../model/products-paginated-response.model";
 
-interface PaginatedResponse {
-  first: number;
-  prev: number | null;
-  next: number | null;
-  last: number;
-  pages: number;
-  items: number;
-  data: Product[];
-}
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +14,7 @@ export class ProductService {
   constructor(private http: HttpClient) { }
 
   public getProducts(keyword: string = "", page: number = 1, size: number = 4) {
-    return this.http.get<PaginatedResponse>(this.host +"?name="+keyword+"&_page="+page+"&_per_page="+size)
+    return this.http.get<ProductsPaginatedResponse>(this.host +"?name="+keyword+"&_page="+page+"&_per_page="+size)
   }
 
   public getProductById(productId: number): Observable<Product> {

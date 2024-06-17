@@ -33,7 +33,7 @@
 
   <ul class="nav nav-pills">
     <li *ngIf="appStateService.authState.isAuthenticated">
-      <span>{{appStateService.authState.username}}</span>
+      <span class="fw-bold">{{appStateService.authState.username}}</span>
       <button class="btn btn-outline-primary ms-1" (click)="handleLogout()">Logout</button>
     </li>
     <li *ngIf="!appStateService.authState.isAuthenticated">
