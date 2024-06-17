@@ -4,6 +4,11 @@ import {Product} from "../model/product.model";
 import {Observable} from "rxjs";
 import {ProductsPaginatedResponse} from "../model/products-paginated-response.model";
 
+/**
+ * @author Mack_TB
+ * @Since 27/05/2024
+ * @version 1.0.0
+ */
 
 @Injectable({
   providedIn: 'root'
