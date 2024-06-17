@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit{
   handleLogin() {
     let username = this.loginFormGroup.value.username;
     let password = this.loginFormGroup.value.password;
-    this.authService.login(username, password)
+    this.authService.login(username, btoa(password)) // encode the password with base64
       .then(resp => {
         this.router.navigateByUrl("admin");
       }).catch(error => {

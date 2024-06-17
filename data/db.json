@@ -2,7 +2,7 @@
   "users": [
     {
       "id": "user1",
-      "password": "1234",
+      "password": "MTIzNA==",
       "roles": [
         "USER"
       ],
@@ -10,7 +10,7 @@
     },
     {
       "id": "user2",
-      "password": "1234",
+      "password": "MTIzNA==",
       "roles": [
         "USER"
       ],
@@ -18,7 +18,7 @@
     },
     {
       "id": "admin",
-      "password": "1234",
+      "password": "MTIzNA==",
       "roles": [
         "USER",
         "ADMIN"
