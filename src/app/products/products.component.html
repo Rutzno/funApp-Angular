@@ -38,7 +38,8 @@
       </table>
       <ul class="nav nav-pills">
         <li *ngFor="let page of [].constructor(appState.productsState.totalPages); let i = index">
-          <button (click)="handleGotoPage(i+1)" [ngClass]="appState.productsState.currentPage==(i+1) ? 'btn btn-primary m-1' : 'btn btn-outline-primary m-1'">
+          <button (click)="handleGotoPage(i+1)"
+                  [ngClass]="appState.productsState.currentPage==(i+1) ? 'btn btn-primary m-1' : 'btn btn-outline-primary m-1'">
             {{(i+1)}}
           </button>
         </li>
